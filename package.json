@@ -4,14 +4,17 @@
   "version": "0.0.1",
   "description": "Quickly create a VUE framework for mobile",
   "scripts": {
+    "prepare": "husky install",
+    "lint": "echo \"name\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
     "pnpm": ">= 8.0.0"
   },
   "packageManager": "pnpm@8.1.0",
-  "peerDependencies": {
-    "eslint": "8.57.0"
+  "devDependencies": {
+    "eslint": "8.57.0",
+    "husky": "^8.0.3"
   },
   "repository": {
     "type": "git",
