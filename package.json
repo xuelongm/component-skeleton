@@ -1,0 +1,26 @@
+{
+  "name": "component-skeleton",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Quickly create a VUE framework for mobile",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "pnpm": ">= 8.0.0"
+  },
+  "packageManager": "pnpm@8.1.0",
+  "peerDependencies": {
+    "eslint": "8.57.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xuelongm/component-skeleton.git"
+  },
+  "author": "maxuelong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xuelongm/component-skeleton/issues"
+  },
+  "homepage": "https://github.com/xuelongm/component-skeleton#readme"
+}
