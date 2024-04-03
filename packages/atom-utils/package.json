@@ -1,0 +1,35 @@
+{
+  "name": "atom-utils",
+  "version": "0.0.1",
+  "description": "Atom Utils",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.mjs.js",
+  "typings": "./dist/index.d.ts",
+  "scripts": {
+
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs.js",
+      "require": "./dist/index.d.ts",
+      "types": "./dist/index.d.ts"
+    },
+    "./*": "./*"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "ts",
+    "atom",
+    "component"
+  ],
+  "devDependencies": {
+    "esbuild": "^0.20.2",
+    "release-it": "^17.1.1",
+    "typescript": "^5.3.2",
+    "rimraf": "^5.0.5"
+  },
+  "author": "maxuelong",
+  "license": "MIT"
+}
