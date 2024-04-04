@@ -6,7 +6,12 @@
   "module": "./dist/index.mjs.js",
   "typings": "./dist/index.d.ts",
   "scripts": {
-
+    "clean": "rimraf ./dist",
+    "dev": "node ./build.js -w",
+    "build:bundle": "node ./build.js",
+    "build:types": "tsc -p ./tsconfig.json --emitDeclarationOnly",
+    "build": "pnpm clean && pnpm build:bundle && pnpm build:types",
+    "prepare": "pnpm build"
   },
   "exports": {
     ".": {
