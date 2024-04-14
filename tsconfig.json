@@ -5,6 +5,6 @@
     "strict": true,
     "target": "ES2015",
     "module": "ESNext",
-    
+    "moduleResolution": "Node",
   }
 }

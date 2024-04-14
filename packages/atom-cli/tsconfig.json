@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig",
+  "compilerOptions": {
+    "outDir": "./lib",
+    "target": "ES2019",
+    "declaration": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["**/node_modules"]
+}
