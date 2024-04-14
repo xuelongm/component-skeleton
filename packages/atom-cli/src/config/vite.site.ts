@@ -70,6 +70,11 @@ export function getSiteConfigForSiteProd():InlineConfig {
         input: {
           main: join(SITE_SRC_DIR, 'index.html'),
           mobile: join(SITE_SRC_DIR, 'mobile.html'),
+        },
+        output: {
+          manualChunks: {
+            'vue-libs': ['vue', 'vue-router']
+          }
         }
       }
     }
