@@ -28,7 +28,7 @@ export interface AtomConfig {
 const CWD = process.cwd();
 const ROOT = CWD;
 
-export const ATOM_CONFIG_FILE = join(ROOT, 'atom-config.mjs');
+export const ATOM_CONFIG_FILE = join(ROOT, 'atom.config.mjs');
 export const ATOM_PACKAGE_FILE = join(ROOT, 'package.json');
 export const SITE_DIST_DIR = join(ROOT, 'site-dist');
 
@@ -56,3 +56,17 @@ export function getSiteConfig(): SiteConfig {
   } 
   return site as unknown as SiteConfig;
 }
+
+export const SRC_DIR = join(ROOT, 'src');
+export const STYLE_DIR = join(ROOT, 'style');
+
+
+export const SCRIPT_EXTS = [
+  '.js',
+  '.jsx',
+  '.vue',
+  '.ts',
+  '.tsx',
+  '.mjs',
+  '.cjs',
+];

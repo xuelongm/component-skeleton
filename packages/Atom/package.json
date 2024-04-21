@@ -1,0 +1,9 @@
+{
+  "name": "@lonng/atom",
+  "version": "4.8.0",
+  "description": "Mobile UI",
+  
+  "devDependencies": {
+    "vue": "^3.4.23"
+  }
+}

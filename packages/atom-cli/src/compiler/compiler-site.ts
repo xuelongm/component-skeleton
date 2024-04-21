@@ -5,10 +5,13 @@ import {
 } from "../common";
 import { getSiteConfigForSiteDev, getSiteConfigForSiteProd } from "../config/vite.site";
 
-
+async function genSiteEntry() {
+  
+}
 
 export async function compilerSite(production = false) {
   setBuildTarget('site');
+  await genSiteEntry();
   if (production) {
     const config = await mergeCustomViteConfig(
       getSiteConfigForSiteProd(),
